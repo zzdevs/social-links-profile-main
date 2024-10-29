@@ -1,0 +1,88 @@
+/* inter-latin-wght-normal */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2)
+    format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100vw;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 1fr 10vh;
+  place-items: center;
+  background-color: hsl(0, 0%, 8%);
+  font-size: 14px;
+}
+
+.card {
+  font-family: 'Inter Variable';
+  width: 260px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.card h3 {
+  font-weight: 600;
+  padding: 1rem 0 0.5rem 0;
+}
+.card h5 {
+  font-size: 9px;
+  color: hsl(75, 94%, 57%);
+}
+.card p {
+  padding: 20px 0;
+  font-size: 9px;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list a {
+  text-decoration: none;
+  color: white;
+  background-color: hsl(0, 0%, 20%);
+  display: block;
+  padding: 10px 0;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+.list a:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+}
+
+.attribution {
+  color: white;
+}
